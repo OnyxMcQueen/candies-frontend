@@ -1,0 +1,42 @@
+.navigation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 20px;
+    height: 12vh;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  .navigation a {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-decoration: none;
+  }
+
+  .logo {
+    font-size: 48px;
+    font-weight: bold;
+    color: #F5F5F5;
+    text-transform: uppercase;
+    justify-self: center;
+  }
+
+  .logo-container h1 {
+    justify-self: center;
+    align-content: center;
+  }
+
+  .nav {
+    background-color: rgba(0, 0, 0, 0.2);
+    margin-right: 20px;
+  }
+  .menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .menu a {
+    align-self: center;
+    justify-self: center;
+    color: #F5F5F5;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
