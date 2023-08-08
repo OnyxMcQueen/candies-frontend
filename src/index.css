@@ -35,6 +35,21 @@ p {
   font-family: 'Shadows Into Light', cursive;
 }
 
+button {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.8);
+  font-family: 'Shadows Into Light', cursive;
+  border-radius: 7px;
+  padding: 10px 40px;
+  border-style: none;
+  transition: background-color 0.5s ease
+}
+
+button:hover {
+  background-color: #333333;
+  color: white;
+}
+
 /* background-color: #cccccc; Used if the image is unavailable
 height: 780px; You must set a specified height
 background-position: center; Center the image
