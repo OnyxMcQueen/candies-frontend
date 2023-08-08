@@ -39,4 +39,10 @@
     font-size: 15px;
     font-weight: bold;
     text-transform: uppercase;
+    transition: color ease-in 0.3s;
   }
+
+  .menu a:hover {
+    color: black;
+  }
+
