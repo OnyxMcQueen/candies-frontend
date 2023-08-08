@@ -30,7 +30,7 @@ function AllCandies() {
     <div>
       <h2 style={{marginTop: "70px"}}>Presenting An Exquisite Selection of Confections 🍭</h2>
 
-      <div class="container mt-5">
+      <div class="container mt-5 mb-5">
           <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
             {
               candyArray.map((item) => {
