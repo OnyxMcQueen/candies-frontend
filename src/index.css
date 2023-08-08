@@ -10,11 +10,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-image: url("https://images7.alphacoders.com/108/1085184.jpg"); /* The image used */
-  background-color: #cccccc; /* Used if the image is unavailable */
-  height: 780px; /* You must set a specified height */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
 }
 
 code {
@@ -29,3 +24,9 @@ h1, h2, h3, h4, h5, h6 {
 p {
   font-family: 'Shadows Into Light', cursive;
 }
+
+/* background-color: #cccccc; Used if the image is unavailable
+height: 780px; You must set a specified height
+background-position: center; Center the image
+background-repeat: no-repeat; Do not repeat the image
+background-size: cover; Resize the background image to cover the entire container */
