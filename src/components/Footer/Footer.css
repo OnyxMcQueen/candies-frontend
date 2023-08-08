@@ -1,0 +1,20 @@
+.bottom {
+    height: 5vh;
+    margin-top: auto;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.bottom p {
+    padding-top: 10px;
+    color: #F5F5F5;
+    font-weight: bold;
+    transition: color ease-in-out 0.3s;
+}
+
+.bottom a {
+    text-decoration: none;
+}
+
+.bottom p:hover {
+    color: black;
+}
