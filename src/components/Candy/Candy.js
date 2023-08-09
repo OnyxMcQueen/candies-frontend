@@ -53,7 +53,7 @@ function Candy() {
                     <p>Enjoy this candy? {candy.is_favorite ? ("😋") : ("🫤")}</p>
                     <p>Rating: {candy.rating}/10</p>
                     <button style={{margin: "3px"}} onClick={() => navigate(`/candies`)}>Go Back.</button>
-                    <button style={{margin: "3px"}}>Edit</button>
+                    <button style={{margin: "3px"}} onClick={() => navigate(`/candies/edit/${id}`)}>Edit</button>
                     <button style={{margin: "3px"}} onClick={handleDelete}><span style={{color: "red"}}>Delete</span></button>
                 </div>
                 </>
