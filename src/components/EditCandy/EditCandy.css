@@ -1,0 +1,40 @@
+.form-container2 {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    margin-left: 250px;
+    margin-right: 250px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+h2 {
+    margin: 11px;
+}
+
+label {
+    margin: 10px;
+}
+
+input[type=text], input[type=number], select {
+    width: 100%;
+    border-radius: 4px;
+    margin: 0 auto;
+}
+
+input[type=text]:focus, input[type=number]:focus {
+    border: 2px solid pink;
+  }
+
+#candy_description {
+    margin-bottom: 30px;
+}
+
+.button-form {
+    margin: 7px;
+}
+
+input[type=checkbox] {
+    height: 15px;
+    width: 20px;
+}
