@@ -14,6 +14,15 @@ h2 {
 
 label {
     margin: 10px;
+    font-weight: bold;
+}
+
+span {
+    font-weight: bold;
+}
+
+.form-control {
+    width: 70%;
 }
 
 input[type=text], input[type=number], select {
