@@ -60,20 +60,9 @@ function EditCandy() {
         })
     }
 
-    function convertToNumber(){
-        let convertedPrice = Number(selectedCandy.price);
-        let convertedRating = Number(selectedCandy.rating);
-
-        setSelectedCandy({
-            ...selectedCandy,
-            price: convertedPrice,
-            rating: convertedRating,
-        })
-    }
 
     async function handleSubmit(e){
         e.preventDefault();
-        convertToNumber();
 
         try{
             let result = await axios.put(`${url}/candies/${id}`, selectedCandy);
@@ -84,10 +73,6 @@ function EditCandy() {
             console.log(e)
         }
     }
-
-
-
-
 
   return (
     <div className='form-container2'>
@@ -104,15 +89,15 @@ function EditCandy() {
             <div className='form-group mx-5'>
                 <label htmlFor='price'>Price</label>
                 <br />
-                <span className='small'>(Please provide a whole number)</span>
-                <input required type='text' className='form-control' id='price' value={selectedCandy.price} onChange={handleChange}/>
+                <span className='small'>Please provide either a decimal or a whole number</span>
+                <input required type='number' className='form-control' id='price' value={selectedCandy.price} onChange={handleChange}/>
             </div>
 
             <div className='form-group mx-5'>
                 <label htmlFor='rating'>Rating</label>
                 <br />
                 <span className='small'>Give the candy a rating out of 10</span>
-                <input required type='text' min={0} max={10} className='form-control' id='rating' value={selectedCandy.rating} onChange={handleChange}/>
+                <input required type='number' min={0} max={10} className='form-control' id='rating' value={selectedCandy.rating} onChange={handleChange}/>
             </div>
 
             <div className='form-group mx-5'>

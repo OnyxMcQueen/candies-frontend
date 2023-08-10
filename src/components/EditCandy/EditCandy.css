@@ -14,10 +14,15 @@ h2 {
 
 label {
     margin: 10px;
+    font-weight: bold;
+}
+
+span {
+    font-weight: bold;
 }
 
 input[type=text], input[type=number], select {
-    width: 100%;
+    width: 70%;
     border-radius: 4px;
     margin: 0 auto;
 }
