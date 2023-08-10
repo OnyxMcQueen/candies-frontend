@@ -9,6 +9,8 @@ import Candy from './components/Candy/Candy';
 import NewCandyForm from './components/NewCandyForm/NewCandyForm';
 import EditCandy from './components/EditCandy/EditCandy';
 import Footer from './components/Footer/Footer';
+import AboutUs from './components/AboutUs/AboutUs';
+import ErrorPage from './components/ErrorPage/ErrorPage';
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
         <Route path='/candies/:id' element={<Candy />}/>
         <Route path='/candies/new' element={<NewCandyForm />}/>
         <Route path='/candies/edit/:id' element={<EditCandy />}/>
+        <Route path='/about-us' element={<AboutUs />}/>
+        <Route path='*' element={<ErrorPage />}/>
       </Routes>
       <Footer />
     </Router>
