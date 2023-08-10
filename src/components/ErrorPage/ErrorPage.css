@@ -1,0 +1,30 @@
+.error-container {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    margin-left: 250px;
+    margin-right: 250px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.error-image {
+    height: 40vh;
+    width:auto;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.error-h2 {
+    margin-top: 20px;
+}
+
+p {
+    font-weight: bold;
+    font-size: larger;
+    margin: 10px;
+}
+
+.error-button {
+    margin: 12px;
+}
