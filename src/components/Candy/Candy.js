@@ -33,13 +33,16 @@ function Candy() {
     }, []);
 
     async function handleDelete(){
-        try{
-            let result = await axios.delete(`${url}/candies/${id}`);
-            alert("This candy has been deleted 🚮")
-            navigate('/candies')
-        }
-        catch(e){
-            console.log(e)
+        const confirmDelete = window.confirm("Are you sure you want to delete this candy?");
+        if(confirmDelete){
+            try{
+                let result = await axios.delete(`${url}/candies/${id}`);
+                alert("This candy has been deleted 🚮")
+                navigate('/candies')
+            }
+            catch(e){
+                console.log(e)
+            }
         }
     }
 
