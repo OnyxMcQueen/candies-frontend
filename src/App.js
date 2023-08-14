@@ -14,19 +14,21 @@ import ErrorPage from './components/ErrorPage/ErrorPage';
 
 function App() {
   return (
-    <Router>
-      <Nav />
-      <Routes>
-        <Route path='/' element={<Home />}/>
-        <Route path='/candies' element={<AllCandies />}/>
-        <Route path='/candies/:id' element={<Candy />}/>
-        <Route path='/candies/new' element={<NewCandyForm />}/>
-        <Route path='/candies/edit/:id' element={<EditCandy />}/>
-        <Route path='/about-us' element={<AboutUs />}/>
-        <Route path='*' element={<ErrorPage />}/>
-      </Routes>
-      <Footer />
-    </Router>
+    <React.Suspense fallback={<Spinner />}>
+      <Router>
+        <Nav />
+        <Routes>
+          <Route path='/' element={<Home />}/>
+          <Route path='/candies' element={<AllCandies />}/>
+          <Route path='/candies/:id' element={<Candy />}/>
+          <Route path='/candies/new' element={<NewCandyForm />}/>
+          <Route path='/candies/edit/:id' element={<EditCandy />}/>
+          <Route path='/about-us' element={<AboutUs />}/>
+          <Route path='*' element={<ErrorPage />}/>
+        </Routes>
+        <Footer />
+      </Router>
+    </React.Suspense>
   );
 }
 
