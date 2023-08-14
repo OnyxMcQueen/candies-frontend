@@ -6,7 +6,7 @@ import './Footer.css';
 function Footer() {
   return (
     <footer className='bottom'>
-        <Link to='/candies/about-us'><p>Created By Karma Ghale & Onyx McQueen</p></Link>
+        <Link to='/about-us'><p>Created By Karma Ghale & Onyx McQueen</p></Link>
     </footer>
   )
 }
