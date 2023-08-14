@@ -8,8 +8,7 @@ import './AllCandies.css'
 
 function AllCandies() {
 
-  let url = process.env.REACT_APP_API_URL;
-  console.log(url);  
+  let url = process.env.REACT_APP_API_URL; 
   const navigate = useNavigate();
 
   const [candyArray, setCandyArray] = useState([]);
@@ -44,8 +43,7 @@ function AllCandies() {
     }
   }, [candyArray]);
 
-  console.log(candyArray);
-  
+
   return (
     <div>
 
@@ -59,7 +57,6 @@ function AllCandies() {
                 <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                   {
                     candyArray.map((item) => {
-                      console.log(item);
                       return(
                         <div className="col rounded" key={item.id}>
                           <div className="card d-flex justify-content-center" style={{backgroundColor: "rgba(211, 211, 211, 0.7)"}}>
