@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import LoadingSpinner from './components/common/Spinner/Spinner';
 import './App.css';
 
 import Home from './components/Home/Home';
@@ -14,7 +15,7 @@ import ErrorPage from './components/ErrorPage/ErrorPage';
 
 function App() {
   return (
-    <React.Suspense fallback={<Spinner />}>
+    <React.Suspense fallback={<LoadingSpinner />}>
       <Router>
         <Nav />
         <Routes>
